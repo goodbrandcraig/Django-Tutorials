@@ -7,7 +7,8 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
-DATABASE_PATH = 'C:\Users\Craig\Desktop\Django Tutorials\mysite\sqlite3.db'
+DATABASE_PATH = 'C:\Users\Craig\Documents\GitHub\Django-Tutorials\mysite\sqlite3.db'
+TEMPLATE_PATH = 'C:/Users/Craig/Documents/GitHub/Django-Tutorials/mysite/templates'
 
 MANAGERS = ADMINS
 
@@ -110,6 +111,7 @@ ROOT_URLCONF = 'mysite.urls'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
+	TEMPLATE_PATH,
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -123,7 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 	'polls',
